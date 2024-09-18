@@ -36,43 +36,38 @@ The LearnSmart MVP provides an interactive and personalized learning experience 
 
 ## Installation
 
+##  ADMIN
+### Username: admin
+### Password: Test@pass1
+
 ### Prerequisites
-- Node.js and npm
-- MySQL or PostgreSQL
+- PHP
+- MySQL
 - YouTube Data API Key
 
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/LearnSmart.git
+   git clone https://github.com/Christopher-Chilengwe/LearnSmart.git
    cd LearnSmart
    ```
 
 2. Install dependencies:
    ```bash
-   npm install
+    install Xampp
    ```
 
 3. Set up the database:
-   - Create a MySQL/PostgreSQL database named `learnsmart_db`.
-   - Run the SQL migration scripts located in `/database/migrations`.
-
-4. Configure environment variables:
-   - Create a `.env` file in the root directory:
-     ```bash
-     DB_HOST=localhost
-     DB_USER=root
-     DB_PASS=yourpassword
-     DB_NAME=learnsmart_db
-     YOUTUBE_API_KEY=your-youtube-api-key
+   - Create a MySQL/ database named `edupulsedb`.
+   - Import the database edupulsedb`.
      ```
 
 5. Start the server:
    ```bash
-   npm start
+   start the localhost server
    ```
 
-6. Access the app at `http://localhost:3000`.
+6. Access the app at `http://localhost/LearnSmart`.
 
 ## API Endpoints
 
