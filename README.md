@@ -26,12 +26,11 @@ The LearnSmart MVP provides an interactive and personalized learning experience 
 
 ## Technology Stack
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Node.js, Express
-- **Database**: MySQL/PostgreSQL
+- **Backend**: PHP
+- **Database**: MySQL
 - **APIs**: YouTube Data API, LearnSmart Custom APIs
 - **Frameworks**: 
-  - Frontend: React/Vue.js (optional)
-  - Backend: Express.js
+  - Backend: codeigniter
 - **Analytics**: LMS Analytics Tool (custom analytics module)
 
 ## Installation
