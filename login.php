@@ -55,8 +55,9 @@ include "Config.php";
     				<button type="submit">Login</button>
     			</div>
     			<div class="form-group">
-    				<a href="signup.php">Sign Up</a>
-    				<a href="index.php">| Home</a>
+				Don't have an account? <a href="signup.php">Sign Up</a>
+				<span class="separator">|</span>
+    				<a href="index.php">Home</a>
     			</div>
     		</form>
     	</div>
