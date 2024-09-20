@@ -21,9 +21,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     
    $data = "fname=".$first_name."&uname=".$username."&email=".$email."&bd=".$date_of_birth."&lname=".$last_name;
 
-   // Split the date into components
-$date_parts = explode('-', $date_of_birth);
-if (count($date_parts) === 3) {
+   
+
+
+   // Perform validations
+   $date_parts = explode('-', $date_of_birth);
+   if (count($date_parts) === 3) {
     $year = $date_parts[0];   // YYYY
     $month = $date_parts[1];  // MM
     $day = $date_parts[2];     // DD
@@ -35,27 +38,20 @@ if (count($date_parts) === 3) {
     } elseif (!Validation::validateMonth($month)) {
         $em = "Invalid month. Please enter a valid month (01-12).";
         Util::redirect("../signup.php", "error", $em, $data);
-    }
-} else {
-    $em = "Invalid date format. Please use YYYY-MM-DD.";
-    Util::redirect("../signup.php", "error", $em, $data);
-}
-
-   // Perform validations
-   if (!Validation::name($first_name)) {
+    } elseif (!Validation::name($first_name)) {
       $em = "Invalid first name";
       Util::redirect("../signup.php", "error", $em, $data);
    } elseif (!Validation::name($last_name)) {
       $em = "Invalid last name";
       Util::redirect("../signup.php", "error", $em, $data);
    } elseif (!Validation::username($username)) {
-      $em = "Invalid user name";
+	$em = "Invalid user name. Usernames must start with a letter and be 5-8 characters long.";
       Util::redirect("../signup.php", "error", $em, $data);
    } elseif (!Validation::email($email)) {
       $em = "Invalid email";
       Util::redirect("../signup.php", "error", $em, $data);
    } elseif (!Validation::password($password)) {
-      $em = "Invalid password";
+	$em = "Invalid password. It must contain at least 4 characters, including uppercase, lowercase, a number, and a special character.";
       Util::redirect("../signup.php", "error", $em, $data);
    } elseif (!Validation::match($password, $re_password)) {
       $em = "Passwords do not match";
@@ -99,4 +95,5 @@ if (count($date_parts) === 3) {
    // If request method is not POST
    $em = "An error occurred";
    Util::redirect("../signup.php", "error", $em);
+}
 }
