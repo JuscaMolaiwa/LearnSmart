@@ -7,6 +7,18 @@ class Validation{
 		$str = htmlspecialchars($str);
 		return $str;
 	}
+
+	static function validateYear($year) {
+		// Check if year is a four-digit number and is a valid year
+		$currentYear = date("Y");
+		return preg_match("/^\d{4}$/", $year) && ($year >= 1900 && $year <= $currentYear);
+	}
+	
+	static function validateMonth($month) {
+		// Check if month is a valid number between 1 and 12
+		return preg_match("/^(0[1-9]|1[0-2]|[1-9])$/", $month);
+	}
+	
     
     static function name($str){
 		# Letters Only 

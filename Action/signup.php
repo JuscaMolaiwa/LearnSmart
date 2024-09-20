@@ -21,6 +21,26 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     
    $data = "fname=".$first_name."&uname=".$username."&email=".$email."&bd=".$date_of_birth."&lname=".$last_name;
 
+   // Split the date into components
+$date_parts = explode('-', $date_of_birth);
+if (count($date_parts) === 3) {
+    $year = $date_parts[0];   // YYYY
+    $month = $date_parts[1];  // MM
+    $day = $date_parts[2];     // DD
+
+    // Validate year and month
+    if (!Validation::validateYear($year)) {
+        $em = "Invalid year. Please enter a valid four-digit year.";
+        Util::redirect("../signup.php", "error", $em, $data);
+    } elseif (!Validation::validateMonth($month)) {
+        $em = "Invalid month. Please enter a valid month (01-12).";
+        Util::redirect("../signup.php", "error", $em, $data);
+    }
+} else {
+    $em = "Invalid date format. Please use YYYY-MM-DD.";
+    Util::redirect("../signup.php", "error", $em, $data);
+}
+
    // Perform validations
    if (!Validation::name($first_name)) {
       $em = "Invalid first name";
@@ -59,8 +79,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			 $Student = new Student($conn);
 			 $student_data = $Student->getData();
 			 $_SESSION['username'] = $student_data['username'];
-			 $_SESSION['student_id'] = $student_data['student_id']; // Store the student ID
-			 $_SESSION['role'] = "Student";  // Set the role in the session
             
             $sm = "Successfully registered!";
             Util::redirect("../Student/Course.php", "success", $sm);
