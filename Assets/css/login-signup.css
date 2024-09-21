@@ -157,4 +157,52 @@
 	  width: 100%;
 	}
   }
-  
+
+
+  /* back button desings*/
+  :root {
+    --back-btn-bg-color: #3498db;
+    --back-btn-hover-bg-color: #2980b9;
+    --back-btn-font-color: #ffffff;
+}
+
+.back-btn {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 18px;
+    color: var(--back-btn-font-color);
+    cursor: pointer;
+    background-color: var(--back-btn-bg-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Align icon and text */
+    gap: 8px; /* Space between icon and text */
+}
+
+.back-btn img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.back-btn:hover {
+    background-color: var(--back-btn-hover-bg-color);
+}
+
+.back-btn:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 2px var(--back-btn-bg-color);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .back-btn {
+        font-size: 14px;
+        padding: 1px 4px;
+    }
+}
+

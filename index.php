@@ -1,64 +1,89 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>LearnSmart - online learning system</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/welcome.css">
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-    <section class="section-1 home-p">
-    	<div class="overl">.</div>
-    	<header>
-    		<h2 class="logo">
-	    		  <img src="assets/img/Logo.png">
-	    	     <span>LearnSmart</span>
-	        </h2>
-	    	<nav>
-	    		<a href="index.php" class="active">Home</a>
-	    		<a href="about.php">About</a>
-	    		<a href="signup.php">Sign Up</a>
-	    		<a href="login.php">Login</a>
-	    		
-	    	</nav>
-    	</header>
-    </section>
-    <section class="section-2">
-    	<h1>Welcome to LearnSmart</h1>
-    	<p>
-    	Welcome to our Online Learning System, where knowledge meets accessibility. Our platform is crafted to empower learners, instructors, and administrators with the tools they need for a dynamic and enriching educational experience.
-    	</p>
-    	<h1>For Learners:</h1>
-    	<p>
-    		Embark on your learning journey with ease. Browse through a diverse range of courses, enroll effortlessly, and track your progress in real-time. Engage with fellow learners through discussion forums, share insights, and earn certificates as a testament to your accomplishments.
-    	</p>
-    	<h1>For Instructors:</h1>
-    	<p>
-    		Shape the future of education by creating captivating courses. Our instructor version provides an intuitive environment for content creation, quiz management, and grading. Stay connected with your students through forums, monitor their progress, and witness the impact of your expertise.
-
-    		
-    	</p>
-    	<p>
-    		At the heart of our platform is a commitment to fostering a collaborative and interactive learning experience. Join us on this educational adventure, where knowledge knows no bounds. Welcome to a world of learning at your fingertips.
-    	</p>
-
-
-    </section>
-    <footer class="main-footer">
-      <h4>RCD2013C - LearnSmart&copy;2024</h4>
-    </footer>
-
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
-
-    <script>
-    	$(document).ready(function(){
-    		$(window).on('scroll', function(){
-    			if ($(window).scrollTop()) {
-                    $("header").addClass('bgc');
-    			}else{
-                    $("header").removeClass('bgc');
-    			}
-    		});
-    	});
-    </script>
-</body>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="LearnSmart - an online learning platform for learners and instructors.">
+      <meta name="keywords" content="online learning, education, courses, LearnSmart">
+      <title>LearnSmart - Online Learning System</title>
+      <link rel="stylesheet" type="text/css" href="assets/css/welcome.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+   </head>
+   <body>
+      <section class="section-1 home-p">
+         <div class="overl">.</div>
+         <header>
+            <h2 class="logo">
+               <img src="assets/img/Logo.png" alt="LearnSmart Logo">
+               <span>LearnSmart</span>
+            </h2>
+            <nav role="navigation">
+               <a href="index.php" class="active">Home</a>
+               <a href="about.php">About</a>
+               <a href="signup.php">Sign Up</a>
+               <a href="login.php">Login</a>
+            </nav>
+         </header>
+         <div class="scroll-arrow">
+            <span class="scroll-text">Scroll Down</span>
+         </div>
+      </section>
+      <main>
+         <section class="section-2">
+            <h1>Welcome to LearnSmart</h1>
+            <p>
+               Welcome to our Online Learning System, where knowledge meets accessibility. Our platform is crafted to empower learners, instructors, and administrators with the tools they need for a dynamic and enriching educational experience.
+            </p>
+            <h1>For Learners:</h1>
+            <p>
+               Embark on your learning journey with ease. Browse through a diverse range of courses, enroll effortlessly, and track your progress in real-time. Engage with fellow learners through discussion forums, share insights, and earn certificates as a testament to your accomplishments.
+            </p>
+            <h1>For Instructors:</h1>
+            <p>
+               Shape the future of education by creating captivating courses. Our instructor version provides an intuitive environment for content creation, quiz management, and grading. Stay connected with your students through forums, monitor their progress, and witness the impact of your expertise.
+            </p>
+            <p>
+               At the heart of our platform is a commitment to fostering a collaborative and interactive learning experience. Join us on this educational adventure, where knowledge knows no bounds. Welcome to a world of learning at your fingertips.
+            </p>
+         </section>
+      </main>
+      <footer class="main-footer">
+         <h4>RCD2013C - LearnSmart&copy;2024</h4>
+      </footer>
+      <script src="assets/js/jquery-3.5.1.min.js"></script>
+      <script>
+         $(function() {
+         	$(window).on('scroll', function() {
+         		if ($(window).scrollTop()) {
+                        $("header").addClass('bgc');
+         		} else {
+                        $("header").removeClass('bgc');
+         		}
+         	});
+         });
+         
+         const scrollArrow = document.querySelector('.scroll-arrow');
+         const section1 = document.querySelector('.section-1');
+         const section2 = document.querySelector('.section-2');
+         
+         // Event listener for scroll
+         window.addEventListener('scroll', () => {
+         const section1Rect = section1.getBoundingClientRect();
+         const section2Top = section2.getBoundingClientRect().top;
+         
+         // Check if Section 1 is fully in view
+         const isSection1InView = section1Rect.top >= 0 && section1Rect.bottom <= window.innerHeight;
+         const isSection2Visible = section2Top <= window.innerHeight;
+         
+         // Show the arrow and text if Section 1 is fully in view and hide if Section 2 is visible
+         if (isSection1InView) {
+            scrollArrow.style.opacity = '1'; // Show arrow
+            scrollArrow.style.animation = 'flicker 1s infinite'; // Start flickering
+         } else if (isSection2Visible) {
+            scrollArrow.style.opacity = '0'; // Hide arrow
+            scrollArrow.style.animation = 'none'; // Stop flickering
+         }
+         });
+      </script>
+   </body>
 </html>
