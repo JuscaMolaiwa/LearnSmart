@@ -31,6 +31,10 @@ if (isset($_GET["lname"])) {
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+	<!-- Back Button with Image -->
+    <a href="javascript:history.back()" class="back-btn">
+    <img src="Assets/img/back-button-svgrepo-com.svg" alt="Back">Back
+	</a>
     <div class="wrapper">
     	<div class="form-holder">
     		<h2>Create New Account</h2>
