@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
    	       Util::redirect("../login.php", "error", $em);
           }
        }else if ($role == "Instructor") {
-        // Instructure login 
+        // Instructur login 
 
           $instructor = new Instructor($conn);
           $auth = $instructor->authenticate($user_name, $password);

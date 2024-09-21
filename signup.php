@@ -98,12 +98,17 @@ if (isset($_GET["lname"])) {
     				<button type="submit">Sign Up</button>
     			</div>
     			<div class="form-group">
-    				<a href="login.php">Sign In</a>
-    				<a href="index.php">| Home</a>
-    			</div>
+  <p class="links">
+  Already have an account?  <a href="login.php">Sign In</a>
+    <span class="separator">|</span>
+    <a href="index.php">Home</a>
+  </p>
+</div>
+
     		</form>
     	</div>
     </div>
+	
   
 </body>
 </html>

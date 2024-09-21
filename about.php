@@ -47,7 +47,7 @@
 		     - Support effective communication through discussion forums.<br>
     	</p>
 
-    </section>
+    </section> 
      
     <footer class="main-footer">
       <h4>RCD2013C - LearnSmart&copy;2024</h4>
