@@ -24,9 +24,12 @@
                <a href="login.php">Login</a>
             </nav>
          </header>
-         <div class="scroll-arrow">
-            <span class="scroll-text">Scroll Down</span>
+         <div class="video-slideshow">
+            <video class="slide" src="Assets/vids/learn-online.mp4" autoplay muted loop></video>
+            <video class="slide" src="Assets/vids/learn-online1.mp4" autoplay muted loop></video>
          </div>
+         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+         <button class="next" onclick="changeSlide(1)">&#10095;</button>
       </section>
       <main>
          <section class="section-2">
@@ -62,28 +65,67 @@
          	});
          });
          
-         const scrollArrow = document.querySelector('.scroll-arrow');
-         const section1 = document.querySelector('.section-1');
-         const section2 = document.querySelector('.section-2');
+         const slides = document.querySelectorAll('.slide');
+         let currentSlide = 0;
+         const totalSlides = slides.length;
+         const homePage = document.querySelector('.home-p');
+         let slideInterval;
          
-         // Event listener for scroll
-         window.addEventListener('scroll', () => {
-         const section1Rect = section1.getBoundingClientRect();
-         const section2Top = section2.getBoundingClientRect().top;
-         
-         // Check if Section 1 is fully in view
-         const isSection1InView = section1Rect.top >= 0 && section1Rect.bottom <= window.innerHeight;
-         const isSection2Visible = section2Top <= window.innerHeight;
-         
-         // Show the arrow and text if Section 1 is fully in view and hide if Section 2 is visible
-         if (isSection1InView) {
-            scrollArrow.style.opacity = '1'; // Show arrow
-            scrollArrow.style.animation = 'flicker 1s infinite'; // Start flickering
-         } else if (isSection2Visible) {
-            scrollArrow.style.opacity = '0'; // Hide arrow
-            scrollArrow.style.animation = 'none'; // Stop flickering
-         }
+         // Function to show the current slide
+         function showSlide(index) {
+         slides.forEach((slide, i) => {
+         slide.classList.toggle('active', i === index);
          });
+         updateButtons();
+         }
+         
+         // Function to change slide with next/prev buttons
+         function changeSlide(n) {
+         currentSlide = (currentSlide + n + totalSlides) % totalSlides;
+         showSlide(currentSlide);
+         }
+         
+         // Update button visibility
+         function updateButtons() {
+         const prevButton = document.querySelector('.prev');
+         const nextButton = document.querySelector('.next');
+         
+         prevButton.style.display = currentSlide === 0 ? 'none' : 'block';
+         nextButton.style.display = currentSlide === totalSlides - 1 ? 'none' : 'block';
+         }
+         
+         // Start the slideshow
+         function startSlideshow() {
+         slideInterval = setInterval(() => {
+         currentSlide = (currentSlide + 1) % totalSlides;
+         showSlide(currentSlide);
+         
+         // If the last slide is reached, reset to home
+         if (currentSlide === 0) {
+            stopSlideshow();
+            resetToHomePage();
+         }
+         }, 15000);
+         }
+         
+         // Stop the slideshow
+         function stopSlideshow() {
+         clearInterval(slideInterval);
+         }
+         
+         // Function to reset to the home page with the background image
+         function resetToHomePage() {
+         // Hide all slides
+         slides.forEach(slide => slide.classList.remove('active'));
+         // Set the background image for the home page
+         document.querySelector('.home-p') = 'url("../img/learn.jpg")';
+         }
+         
+         // Initial setup
+         showSlide(currentSlide);
+         updateButtons();
+         startSlideshow();
+         
       </script>
    </body>
 </html>
