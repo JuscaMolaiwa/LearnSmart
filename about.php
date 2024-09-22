@@ -29,12 +29,12 @@
         <section class="section-2">
         	<h1 style="text-align: center;">
         		<img src="assets/img/Logo.png" alt="LearnSmart Logo"><br>
-        		LearnSmart 
+        		About LearnSmart 
         	</h1>
         	<p>
-        		The online learning system website aims to provide a user-friendly and accessible platform for learners, instructors, and administrators. The system is designed to facilitate seamless interaction, efficient course management, and a rich learning experience. The website incorporates the following versions:
+			Discover LearnSmart - your gateway to accessible and engaging online education. Our platform is designed to empower learners, instructors, and administrators with user-friendly tools for a dynamic learning experience. Join us to explore a wide variety of courses, connect with a vibrant educational community, and achieve your academic goals.
         	</p>
-        	<h1>Goals</h1>
+        	<h1>Empower Your Learning</h1>
         	<p>
         		- Enable users to easily navigate and explore available courses.<br>
         		- Streamline the course enrollment process for a hassle-free experience.<br>
