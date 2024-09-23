@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="Assets/css/nicepage.css" media="screen">
       <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
       
-      <script class="u-script" type="text/javascript" src="Assets/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="Assets/js/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="Assets/js/nicepage.js" defer=""></script>
       <link rel="stylesheet" type="text/css" href="assets/css/welcome.css">
       <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -19,6 +19,7 @@
    <body>
       <section class="section-1 home-p">
          <div class="overl">.</div>
+         
          <header>
             <h2 class="logo">
                <img src="assets/img/Logo.png" alt="LearnSmart Logo">
@@ -31,6 +32,7 @@
                <a href="login.php">Login</a>
             </nav>
          </header>
+
          <div class="video-slideshow">
             <video class="slide" src="Assets/vids/learn-online.mp4" autoplay muted loop></video>
             <video class="slide" src="Assets/vids/learn-online1.mp4" autoplay muted loop></video>
@@ -179,7 +181,6 @@
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 515.556 515.556" style=""><use xlink:href="#svg-3232"></use></svg><svg class="u-svg-content" viewBox="0 0 515.556 515.556" id="svg-3232"><path d="m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z"></path></svg>
             
-            
           </span>
                 <p class="u-text u-text-1">Discover LearnSmart - your gateway to accessible and engaging online education. Our platform is designed to empower learners, instructors, and administrators with user-friendly tools for a dynamic learning experience.</p>
               </div>
@@ -213,7 +214,6 @@
       </div>
     </section>
 
-
     <section class="u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xl u-grey-80 u-section-6" id="sec-3111">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500">Dynamic Learning Experience</h2>
@@ -224,7 +224,7 @@
                 <h4 class="u-align-center u-text u-text-default u-text-2">Dynamic Learning</h4>
                 <p class="u-align-center u-text u-text-default u-text-3">Streamline the course enrollment process for a hassle-fre...</p>
                 <div class="u-align-center u-border-3 u-border-grey-30 u-line u-line-horizontal u-opacity u-opacity-45 u-line-1"></div>
-                <img class="u-border-9 u-border-palette-1-base u-image u-image-circle u-preserve-proportions u-image-1" alt="" data-image-width="349" data-image-height="425" src="Assets/images/photo-1571863393474-b94c72f117fe.jpeg"  data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></img>
+                <img class="u-border-9 u-border-palette-1-base u-image u-image-circle u-preserve-proportions u-image-1" alt="" data-image-width="349" data-image-height="425" src="Assets/images/photo-1571863393474-b94c72f117fe.jpeg" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></img>
               </div>
             </div>
             <div class="u-container-align-center u-container-style u-list-item u-radius-32 u-repeater-item u-shape-round u-white u-list-item-2" data-animation-direction="Up" data-animation-name="customAnimationIn" data-animation-duration="1500">
@@ -232,7 +232,7 @@
                 <h4 class="u-align-center u-text u-text-default u-text-4">Hassle-Free Enrollment</h4>
                 <p class="u-align-center u-text u-text-default u-text-5">Provide an intuitive dashboard for tracking course progre...</p>
                 <div class="u-align-center u-border-3 u-border-grey-30 u-line u-line-horizontal u-opacity u-opacity-45 u-line-2"></div>
-                <img class="u-border-9 u-border-palette-1-base u-image u-image-circle u-preserve-proportions u-image-2" alt="" data-image-width="319" data-image-height="425" src="Assets/images/photo-1645620385402-c366f6b870dd.jpeg"  data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></img>
+                <img class="u-border-9 u-border-palette-1-base u-image u-image-circle u-preserve-proportions u-image-2" alt="" data-image-width="319" data-image-height="425" src="Assets/images/photo-1645620385402-c366f6b870dd.jpeg" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></img>
               </div>
             </div>
             <div class="u-container-align-center u-container-style u-list-item u-radius-32 u-repeater-item u-shape-round u-white u-list-item-3" data-animation-direction="Up" data-animation-name="customAnimationIn" data-animation-duration="1500">
@@ -248,7 +248,7 @@
                 <h4 class="u-align-center u-text u-text-default u-text-8">Optimal User Experience</h4>
                 <p class="u-align-center u-text u-text-default u-text-9">Foster engagement through discussion forums, ratings, and...</p>
                 <div class="u-align-center u-border-3 u-border-grey-30 u-line u-line-horizontal u-opacity u-opacity-45 u-line-4"></div>
-                <img class="u-border-9 u-border-palette-1-base u-image u-image-circle u-preserve-proportions u-image-4" alt="" data-image-width="319" data-image-height="425"  src="Assets/images/photo-1662065932251-5682edd1c11d.jpeg"  data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></img>
+                <img class="u-border-9 u-border-palette-1-base u-image u-image-circle u-preserve-proportions u-image-4" alt="" data-image-width="319" data-image-height="425"  src="Assets/images/photo-1662065932251-5682edd1c11d.jpeg" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></img>
               </div>
             </div>
             <div class="u-container-align-center u-container-style u-list-item u-radius-32 u-repeater-item u-shape-round u-white u-list-item-5" data-animation-direction="Up" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
@@ -256,7 +256,7 @@
                 <h4 class="u-align-center u-text u-text-default u-text-10">Fostered Engagement</h4>
                 <p class="u-align-center u-text u-text-default u-text-11">Offer instructors a straightforward interface for course ...</p>
                 <div class="u-align-center u-border-3 u-border-grey-30 u-line u-line-horizontal u-opacity u-opacity-45 u-line-5"></div>
-                <img class="u-border-9 u-border-palette-1-base u-image u-image-circle u-preserve-proportions u-image-5" alt="" data-image-width="319" data-image-height="425" src="Assets/images/photo-1632571401005-458e9d244591.jpeg"   data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></img>
+                <img class="u-border-9 u-border-palette-1-base u-image u-image-circle u-preserve-proportions u-image-5" alt="" data-image-width="319" data-image-height="425" src="Assets/images/photo-1632571401005-458e9d244591.jpeg" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></img>
               </div>
             </div>
             <div class="u-container-align-center u-container-style u-list-item u-radius-32 u-repeater-item u-shape-round u-white u-list-item-6" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
@@ -264,12 +264,13 @@
                 <h4 class="u-align-center u-text u-text-default u-text-12">Discover LearnSmart</h4>
                 <p class="u-align-center u-text u-text-default u-text-13">Empower your learning with LearnSmart today!</p>
                 <div class="u-align-center u-border-3 u-border-grey-30 u-line u-line-horizontal u-opacity u-opacity-45 u-line-6"></div>
-                <img class="u-border-9 u-border-palette-1-base u-image u-image-circle u-preserve-proportions u-image-6" alt="" data-image-width="283" data-image-height="425" src="Assets/images/photo-1624571381490-4ad98eb53445.jpeg"   data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></img>
+                <img class="u-border-9 u-border-palette-1-base u-image u-image-circle u-preserve-proportions u-image-6" alt="" data-image-width="283" data-image-height="425" src="Assets/images/photo-1624571381490-4ad98eb53445.jpeg" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></img>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </section>
 
       </main>

@@ -6,7 +6,7 @@
 @font-face {
 	font-family: PoppinsBlack;
 	src: url('../fonts/Poppins-Black.ttf');
-}
+} 
 
 * {
 	padding: 0;
@@ -135,14 +135,27 @@ nav a:hover {
   
   .u-section-2 .u-sheet-1 {
 	min-height: 406px;
+
+	display: flex; /* Flexbox for centering */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure content stacks vertically */
+
+
   }
   
   .u-section-2 .u-list-1 {
 	width: 1142px;
 	margin: 60px -1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
   }
-  
+
   .u-section-2 .u-repeater-1 {
+	display: grid;
 	grid-template-columns: repeat(4, calc(25% - 16.5px));
 	min-height: 263px;
 	grid-gap: 22px;
@@ -156,7 +169,8 @@ nav a:hover {
 	--animation-custom_in-scale: 0.3;
 	--radius: 32px;
   }
-  
+
+
   .u-section-2 .u-container-layout-1 {
 	padding: 30px;
   }
@@ -322,6 +336,7 @@ nav a:hover {
   
 	.u-section-2 .u-repeater-1 {
 	  grid-template-columns: 100%;
+	  justify-items: center; 
 	}
   
 	.u-section-2 .u-container-layout-1 {
@@ -578,7 +593,9 @@ nav a:hover {
 	  width: 340px;
 	  margin-bottom: -90px;
 	}
-  } .u-section-3 {
+  } 
+  
+  .u-section-4 {
 	background-image: none;
   }
 
@@ -715,6 +732,12 @@ nav a:hover {
  /*Section-4 designs*/
 .u-section-4 {
 	background-image: none;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: none;
+  padding: 40px 0; /* Adjust padding as needed */
 }
 
 .u-section-4 .u-sheet-1 {
@@ -1452,7 +1475,7 @@ nav a:hover {
   .u-section-6 .u-image-1 {
 	width: 288px;
 	height: 288px;
-	background-image: url("images/photo-1571863393474-b94c72f117fe.jpeg");
+	background-image: url("Assets/images/photo-1571863393474-b94c72f117fe.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 50px;
 	--animation-custom_in-translate_y: 0px;
@@ -1494,7 +1517,7 @@ nav a:hover {
   .u-section-6 .u-image-2 {
 	width: 288px;
 	height: 288px;
-	background-image: url("images/photo-1645620460666-3265887256c2.jpeg");
+	background-image: url("Assets/images/photo-1645620460666-3265887256c2.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 50px;
 	--animation-custom_in-translate_y: 0px;
@@ -1576,7 +1599,7 @@ nav a:hover {
   .u-section-6 .u-image-4 {
 	width: 288px;
 	height: 288px;
-	background-image: url("images/photo-1662065932251-5682edd1c11d.jpeg");
+	background-image: url("Assets/images/photo-1662065932251-5682edd1c11d.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 50px;
 	--animation-custom_in-translate_y: 0px;
@@ -1618,7 +1641,7 @@ nav a:hover {
   .u-section-6 .u-image-5 {
 	width: 288px;
 	height: 288px;
-	background-image: url("images/photo-1645620385402-c366f6b870dd.jpeg");
+	background-image: url("Assets/images/photo-1645620385402-c366f6b870dd.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 50px;
 	--animation-custom_in-translate_y: 0px;
@@ -1660,7 +1683,7 @@ nav a:hover {
   .u-section-6 .u-image-6 {
 	width: 288px;
 	height: 288px;
-	background-image: url("images/photo-1624571381490-4ad98eb53445.jpeg");
+	background-image: url("Assets/images/photo-1624571381490-4ad98eb53445.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 50px;
 	--animation-custom_in-translate_y: 0px;

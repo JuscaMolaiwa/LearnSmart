@@ -34,6 +34,28 @@
   }
 }
 
+.image-animate-in {
+  --animation-custom_in-translate_x: 100px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-scale: 1.5;
+  --animation-custom_in-rotate: 45deg;
+  --animation-custom_in-opacity: 0;
+  animation: customAnimationIn 1.5s forwards ease-in-out;
+}
+
+.image-animate-out {
+  --animation-custom_out-translate_x: 0px;
+  --animation-custom_out-translate_y: 100px;
+  --animation-custom_out-scale: 0.5;
+  --animation-custom_out-rotate: 90deg;
+  --animation-custom_out-opacity: 0;
+  animation: customAnimationOut 1.5s forwards ease-in-out;
+}
+
+
+
+
+
 
 
 
