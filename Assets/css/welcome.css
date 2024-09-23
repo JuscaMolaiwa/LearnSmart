@@ -1220,15 +1220,23 @@ nav a:hover {
    /*Section-5 designs*/
   .u-section-5 {
 	background-image: none;
+	text-align: center; 
   }
   
   .u-section-5 .u-sheet-1 {
-	min-height: 564px;
+	min-height: 406px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack content vertically */
+	
   }
   
   .u-section-5 .u-list-1 {
 	grid-template-rows: repeat(3, auto);
 	margin: 60px 0;
+
+	
   }
   
   .u-section-5 .u-repeater-1 {
@@ -1247,9 +1255,14 @@ nav a:hover {
 	width: 64px;
 	margin: 0;
   }
+
+  .u-section-5 .u-text {
+
+  }
   
   .u-section-5 .u-text-1 {
 	margin: -64px 0 0 108px;
+	
   }
   
   .u-section-5 .u-container-layout-2 {
@@ -1409,15 +1422,20 @@ nav a:hover {
 
   }
 
+  
+
    /*Section-6 designs*/
   .u-section-6 {
 	background-image: none;
   }
 
 
-
   .u-section-6 .u-sheet-1 {
-	min-height: 1319px;
+	min-height: 564px;
+	display: flex; /* Flexbox for centering */
+    justify-content: center;
+    align-items: center;
+
   }
   
   .u-section-6 .u-text-1 {
@@ -1437,11 +1455,13 @@ nav a:hover {
   }
   
   .u-section-6 .u-repeater-1 {
-	grid-template-columns: repeat(3, calc(33.3333% - 20px));
+	grid-template-columns: repeat(3, calc(29.3333% - 115px));
 	min-height: 1038px;
 	grid-gap: 30px;
+	flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+	justify-content: center; /* Center the items */
   }
-  
+
   .u-section-6 .u-list-item-1 {
 	background-image: none;
 	--animation-custom_in-translate_x: 0px;
@@ -1453,9 +1473,22 @@ nav a:hover {
   
   .u-section-6 .u-container-layout-1 {
 	padding: 30px;
+	justify-content: center; /* Center the items */
   }
+
+  .u-section-6 .u-repeater-item {
+	width: 385px; /* Adjust the width of each box */
+	height: auto; /* Adjust height as needed, or set it to 'auto' to fit content */
+	border-radius: 20px; /* You can change this to adjust the roundness of the box */
+	background-color: white; /* Set the background color */
+	padding: auto; /* Controls the spacing inside the box */
+	margin: 0 auto;
+	justify-content: center; /* Center the items */
+	margin-right: auto; /* Add space to the right of each box */
+}
   
   .u-section-6 .u-text-2 {
+	font-size: 1.25rem;
 	margin: 0 auto;
   }
   
@@ -1496,6 +1529,7 @@ nav a:hover {
   
   .u-section-6 .u-container-layout-2 {
 	padding: 30px;
+	justify-content: center; /* Center the items */
   }
   
   .u-section-6 .u-text-4 {
@@ -1538,6 +1572,7 @@ nav a:hover {
   
   .u-section-6 .u-container-layout-3 {
 	padding: 30px;
+	justify-content: center; /* Center the items */
   }
   
   .u-section-6 .u-text-6 {
@@ -1578,6 +1613,8 @@ nav a:hover {
   
   .u-section-6 .u-container-layout-4 {
 	padding: 30px;
+	justify-content: center; /* Center the items */
+	
   }
   
   .u-section-6 .u-text-8 {
@@ -1620,6 +1657,7 @@ nav a:hover {
   
   .u-section-6 .u-container-layout-5 {
 	padding: 30px;
+	justify-content: center; /* Center the items */
   }
   
   .u-section-6 .u-text-10 {
@@ -1662,6 +1700,8 @@ nav a:hover {
   
   .u-section-6 .u-container-layout-6 {
 	padding: 30px;
+	justify-content: center; /* Center the items */
+	
   }
   
   .u-section-6 .u-text-12 {
@@ -2003,11 +2043,6 @@ nav a:hover {
   
 	.u-section-6 .u-line-1 {
 	  width: 263px;
-	}
-  
-	.u-section-6 .u-container-layout-2 {
-	  padding-left: 20px;
-	  padding-right: 20px;
 	}
   
 	.u-section-6 .u-text-5 {
